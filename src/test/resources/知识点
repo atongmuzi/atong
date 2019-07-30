@@ -1,0 +1,10 @@
+1、加载properties配置文件的两种方式
+    1.1、在xml文件中配置 <context:property-placeholder location="dubbo.properties"></context:property-placeholder>
+    1.1、在自动扫描配置文件中加注解@PropertySource("classpath:dubbo.properties")
+2、bean在容器中生成的方式两种
+    2.1、在xml中配置该bean
+    2.2、加注解@Component的方式，扫描到该bean
+3、@Autowired是by type的方式,@Resource默认为by type，也可以为by name ，@Resource（name=''）
+4、导入xml的两种方式
+    4.1、
+    4.2、
