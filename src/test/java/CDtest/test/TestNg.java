@@ -20,6 +20,7 @@ public class TestNg extends Abstract {
         String string= testDTOData.cdDTO.getValue();
         CdDTO cdDTO = JSON.parseObject(string,CdDTO.class);
         cd.play(cdDTO);
+        System.out.println("ahua");
     }
 
 }

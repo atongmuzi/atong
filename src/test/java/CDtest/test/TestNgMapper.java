@@ -18,5 +18,6 @@ public class TestNgMapper extends Abstract {
         System.out.println("atong");
         System.out.println("alin");
         System.out.println("ahua");
+        System.out.println("阿童");
     }
 }
