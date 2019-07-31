@@ -6,7 +6,7 @@ public enum testDTOData {
 
     private String value;
 
-    private testDTOData(String value) {
+    testDTOData(String value) {
         this.value = value;
     }
 
