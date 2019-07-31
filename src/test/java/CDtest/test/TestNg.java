@@ -22,5 +22,4 @@ public class TestNg extends Abstract {
         cd.play(cdDTO);
         System.out.println("ahua");
     }
-
 }
