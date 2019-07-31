@@ -16,5 +16,6 @@ public class TestNgMapper extends Abstract {
         System.out.println(selectAdminService.selectByPhone("13656640242"));
         System.out.println("test");
         System.out.println("atong");
+        System.out.println("alin");
     }
 }
