@@ -11,8 +11,8 @@ public class TestNgMapper extends Abstract {
     SelectAdminService selectAdminService;
     @Test
     public void test(){
-        Tadmin tadmin=selectAdminService.select(1L);
-        System.out.println(tadmin);
+      //  Tadmin tadmin=selectAdminService.select(1L);
+        //  System.out.println(tadmin);
         System.out.println(selectAdminService.selectByPhone("13656640242"));
         System.out.println("test");
         System.out.println("atong");
