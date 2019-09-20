@@ -10,5 +10,4 @@ import org.springframework.context.annotation.ImportResource;
 //@ComponentScan(basePackages = {"CD","MyBatis"})
 @ImportResource("classpath:spring-mybatis.xml")
 public class ScanStartup {
-
 }
