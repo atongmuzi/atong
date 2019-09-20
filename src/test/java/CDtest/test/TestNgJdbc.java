@@ -11,7 +11,7 @@ public class TestNgJdbc extends AbstractJdbc {
     @Test
     public void testUpdate(){
         String sql = "update user_credit set used_credit = ? where id = ? ";
-        jdbcTemplate.update(sql,32,82);
+        jdbcTemplate.update(sql,36,13);
         System.out.println(Thread.currentThread().getName()+"do sometings ----"+System.currentTimeMillis());
     }
 }
