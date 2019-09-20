@@ -14,11 +14,11 @@ public class SelectAdminServiceImpl implements SelectAdminService {
 
     @Override
     public Tadmin select(Long id) {
-        return tadminMapper.selectByPrimaryKey(id);
+        return this.tadminMapper.selectByPrimaryKey(id);
 
     }
     @Override
     public Tadmin selectByPhone(String phone){
-        return tadminMapper.selectByPhone(phone);
+        return this.tadminMapper.selectByPhone(phone);
     }
 }
