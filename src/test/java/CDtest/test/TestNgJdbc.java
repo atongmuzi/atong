@@ -1,6 +1,8 @@
 package CDtest.test;
 
 import CDtest.base.AbstractJdbc;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.testng.annotations.Test;
@@ -12,6 +14,8 @@ public class TestNgJdbc extends AbstractJdbc {
     private static final Logger LOGGER = LogManager.getLogger(TestNgJdbc.class);
 
     @Test
+    @Feature("atong test")
+    @Story("story3")
     public void testUpdate(){
         String sql = "update user_credit set used_credit = ? where id = ? ";
         jdbcTemplate.update(sql,36,13);

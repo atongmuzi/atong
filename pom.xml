@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <allure.version>2.12.1</allure.version>
+        <aspectj.version>1.9.4</aspectj.version>
     </properties>
 
     <profiles>
@@ -107,6 +109,39 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-testng-adaptor</artifactId>
+            <version>1.3.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>    <!-- 依赖Guice -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>4.2.1</version>
+        </dependency>
     </dependencies>
     <build>
         <resources>
@@ -116,10 +151,6 @@
                     <include>**/*.xml</include>
                 </includes>
             </resource>
-<!--            <resource>-->
-<!--                <directory>src/main/resources</directory>-->
-<!--                <targetPath>${project.build.directory}/classes</targetPath>-->
-<!--            </resource>-->
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
@@ -128,6 +159,7 @@
                     <exclude>application-dev.properties</exclude>
                     <exclude>application-test.properties</exclude>
                     <exclude>application-prod.properties</exclude>
+                    <exclude>environment.properties</exclude>
                 </excludes>
             </resource>
             <resource>
@@ -138,6 +170,14 @@
                     <include>application-${envFlag}.properties</include>
                 </includes>
                 <targetPath>${project.build.directory}/classes</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>environment.properties</include>
+                </includes>
+                <targetPath>${project.build.directory}/allure-results</targetPath>
             </resource>
         </resources>
         <plugins>
@@ -156,8 +196,39 @@
                     <overwrite>true</overwrite>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
 
         </plugins>
     </build>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 
 </project>

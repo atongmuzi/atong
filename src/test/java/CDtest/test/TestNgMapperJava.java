@@ -7,11 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
 public class TestNgMapperJava extends AbstractJava {
-    @Autowired
-    SelectAdminServiceJava selectAdminServiceJava;
-    @Test
-    public void test(){
-        Tadmin tadmin=selectAdminServiceJava.select(1L);
-        System.out.println(tadmin);
-    }
+//    @Autowired
+//    SelectAdminServiceJava selectAdminServiceJava;
+//    @Test
+//    public void test(){
+//        Tadmin tadmin=selectAdminServiceJava.select(1L);
+//        System.out.println(tadmin);
+//    }
 }

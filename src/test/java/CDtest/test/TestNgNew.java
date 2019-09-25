@@ -1,11 +1,11 @@
 package CDtest.test;
 
 import CD.CdDTO;
-import CDtest.base.Abstract;
+import CDtest.base.AbstractJava;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
-public class TestNgNew extends Abstract {
+public class TestNgNew extends AbstractJava {
 
     @Autowired
     CdDTO cdDTO;

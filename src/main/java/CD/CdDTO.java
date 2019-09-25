@@ -17,4 +17,13 @@ public class CdDTO {
     public String artist;
     @Autowired
     public SongDTO songDTO;
+
+    @Override
+    public String toString() {
+        return "CdDTO{" +
+                "title='" + title + '\'' +
+                ", artist='" + artist + '\'' +
+                ", songDTO=" + songDTO +
+                '}';
+    }
 }
