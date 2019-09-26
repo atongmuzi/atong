@@ -56,6 +56,5 @@ public class TestNg extends AbstractJava {
         LOGGER.info("引入变量后title is "+ cdDTO.title);
         Allure.addAttachment("出参",cdDTO.toString());
        // Assert.assertEquals(cdDTO.title,"adbc");
-
     }
 }
