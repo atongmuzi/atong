@@ -43,7 +43,7 @@ public class TestNg extends AbstractJava {
     @Story("story2")
     @Title("test title")
     @Description("该案例是为了测试通过静态变量引入数据")
-    @Link("https://example.org")
+    @Link("AG-2759823")
     public void cdPlayStaticData(){
         step("打印默认title"+cdDTO.title);
         LOGGER.info("默认title is "+cdDTO.title);

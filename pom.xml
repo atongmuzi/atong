@@ -226,6 +226,10 @@
                 <version>2.10.0</version>
                 <configuration>
                     <reportVersion>${allure.version}</reportVersion>
+                    <properties>
+                        <allure.issues.tracker.pattern>http://192.168.20.134:65530/%s</allure.issues.tracker.pattern>
+                        <allure.tests.management.pattern>http://192.168.20.134:65530/%s</allure.tests.management.pattern>
+                    </properties>
                 </configuration>
             </plugin>
         </plugins>
