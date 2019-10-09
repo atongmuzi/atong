@@ -6,6 +6,7 @@ import CDtest.base.AbstractJava;
 import CDtest.base.listener.AllureReporterListener;
 import CDtest.data.testDTOData;
 import com.alibaba.fastjson.JSON;
+import com.jayway.jsonpath.JsonPath;
 import io.qameta.allure.*;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -17,6 +18,8 @@ import CDtest.data.staticDTOData;
 import ru.yandex.qatools.allure.annotations.Title;
 
 import static io.qameta.allure.Allure.step;
+
+import static CDtest.data.staticDTOData.testJson;
 
 
 //@Listeners({AllureReporterListener.class})
@@ -56,5 +59,10 @@ public class TestNg extends AbstractJava {
         LOGGER.info("引入变量后title is "+ cdDTO.title);
         Allure.addAttachment("出参",cdDTO.toString());
        // Assert.assertEquals(cdDTO.title,"adbc");
+        System.out.println(testJson);
+
+        String isValid= JsonPath.read(testJson,"$.data.isValid").toString();
+
+        System.out.println("isValid 的值为："+isValid);
     }
 }
