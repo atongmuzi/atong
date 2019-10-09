@@ -63,6 +63,6 @@ public class TestNg extends AbstractJava {
 
         String isValid= JsonPath.read(testJson,"$.data.isValid").toString();
 
-        System.out.println("isValid 的值为："+isValid);
+        System.out.println("isValid 的值为 ："+isValid);
     }
 }
