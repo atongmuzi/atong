@@ -19,4 +19,8 @@
        <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
               <property name="dataSource" ref="dataSource"></property>
        </bean>
+<!--       <bean id="dbUtilsTemplate" class="jdbc.DBUtilsTemplate">-->
+<!--              <property name="dataSource" ref="dataSource"></property>-->
+<!--       </bean>-->
+       <context:component-scan base-package="jdbc"></context:component-scan>
 </beans>
