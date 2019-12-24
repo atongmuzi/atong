@@ -358,3 +358,56 @@
 [INFO] [2019-10-10 15:50:33][com.mchange.v2.log.MLog]MLog clients using log4j logging.
 [INFO] [2019-10-10 15:50:33][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
 [INFO] [2019-10-10 15:50:33][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge6zka51e4fxc9gshxf3|2fd954f, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge6zka51e4fxc9gshxf3|2fd954f, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://rm-bp1710pt8uc479581go.mysql.rds.aliyuncs.com:3306/koala?characterEncoding=utf8&useSSL=true&nullCatalogMeansCurrent=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2019-10-25 15:06:07][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-10-25 15:06:07][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-10-25 15:06:07][CDtest.test.TestNg]默认title is atong,ahua
+[INFO] [2019-10-25 15:06:08][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-10-25 15:06:08][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-10-25 18:19:11][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-10-25 18:19:11][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-10-25 18:19:12][CDtest.test.TestNg]默认title is atong,ahua
+[INFO] [2019-10-25 18:19:12][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-10-25 18:19:12][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-10-29 09:33:51][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-10-29 09:33:51][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-10-29 09:35:56][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-10-29 09:35:57][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-10-29 16:57:00][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-10-29 16:57:00][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-10-29 16:58:05][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-10-29 16:58:05][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 17:05:13][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-24 17:05:13][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 17:05:14][CDtest.test.TestNg]默认title is atong,ahua
+[INFO] [2019-12-24 17:05:14][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-24 17:05:14][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-24 17:06:24][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-24 17:06:24][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 17:06:25][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-24 17:06:25][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-24 17:06:25][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-24 17:06:25][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-24 17:07:38][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-24 17:07:38][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 17:07:39][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-24 17:07:39][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-24 17:07:39][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-24 17:07:39][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-24 18:08:20][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-24 18:08:20][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 18:08:21][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-24 18:08:21][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-24 18:08:21][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-24 18:08:21][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-24 18:09:02][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-24 18:09:02][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 18:09:03][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-24 18:09:03][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-24 18:09:03][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-24 18:09:03][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-24 18:16:04][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-24 18:16:05][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]引入变量后title is abc

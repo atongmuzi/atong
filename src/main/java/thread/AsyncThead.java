@@ -1,7 +1,12 @@
 package thread;
 
+import CD.CDPlayer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
+import javax.sql.DataSource;
 
 @Component
 public class AsyncThead {

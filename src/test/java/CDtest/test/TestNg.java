@@ -65,4 +65,8 @@ public class TestNg extends AbstractJava {
 
         System.out.println("isValid 的值为 ："+isValid);
     }
+    @Test
+    public void nameTest(){
+
+    }
 }

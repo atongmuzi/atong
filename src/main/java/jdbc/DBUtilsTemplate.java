@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service("dbUtilsTemplate")
-public class DBUtilsTemplate {
+public class DBUtilsTemplate  {
 
     @Resource(name="dataSource")
     private DataSource dataSource;
