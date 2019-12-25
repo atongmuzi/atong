@@ -23,8 +23,7 @@ public class junit {
     }
 
     @Test
-    public void ges()
-    {
+    public void ges() {
         junit1.test();
     }
 }
