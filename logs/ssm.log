@@ -411,3 +411,51 @@
 [INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]默认title is abc
 [INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]测试通过静态变量引入数据成功
 [INFO] [2019-12-24 18:16:06][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:27:36][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:27:36][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:27:37][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:27:37][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:27:37][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:27:37][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:29:06][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:29:07][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:29:08][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:29:08][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:29:08][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:29:08][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:29:49][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:29:50][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:29:51][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:29:51][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:29:51][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:29:51][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:30:19][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:30:19][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:30:20][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:30:20][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:30:20][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:30:20][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:30:58][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:30:58][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:30:59][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:30:59][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:30:59][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:30:59][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:32:16][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:32:16][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:32:18][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:32:18][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:32:18][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:32:18][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:33:39][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:33:39][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:33:40][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:33:40][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:33:40][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:33:40][CDtest.test.TestNg]引入变量后title is abc
+[INFO] [2019-12-25 14:34:29][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2019-12-25 14:34:30][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2019-12-25 14:34:30][CDtest.test.TestNg]测试通过枚举类型引入数据成功
+[INFO] [2019-12-25 14:34:30][CDtest.test.TestNg]默认title is abc
+[INFO] [2019-12-25 14:34:30][CDtest.test.TestNg]测试通过静态变量引入数据成功
+[INFO] [2019-12-25 14:34:30][CDtest.test.TestNg]引入变量后title is abc
