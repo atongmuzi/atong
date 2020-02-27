@@ -148,7 +148,11 @@
             <artifactId>commons-dbutils</artifactId>
             <version>1.7</version>
         </dependency>
-
+        <dependency>
+            <groupId>io.cex.test</groupId>
+            <artifactId>test-framework</artifactId>
+            <version>1.2</version>
+        </dependency>
     </dependencies>
     <build>
         <resources>
@@ -224,12 +228,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
-                <configuration>
-                    <suiteXmlFiles>
-<!--                        <suiteXmlFile>test.xml</suiteXmlFile>-->
-                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <suiteXmlFiles>-->
+<!--&lt;!&ndash;                        <suiteXmlFile>test.xml</suiteXmlFile>&ndash;&gt;-->
+<!--                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
+<!--                </configuration>-->
             </plugin>
 
         </plugins>
@@ -253,16 +257,21 @@
         </plugins>
     </reporting>
     <distributionManagement>
-        <repository>
-            <id>nexus-releases</id>
-            <name>nexus-releases</name>
-            <url>http://localhost:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>nexus-snapshots</name>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
+<!--        <repository>-->
+<!--            <id>nexus-releases</id>-->
+<!--            <name>nexus-releases</name>-->
+<!--            <url>http://localhost:8081/repository/maven-releases/</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>nexus-snapshots</id>-->
+<!--            <name>nexus-snapshots</name>-->
+<!--            <url>http://localhost:8081/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--        <repository>-->
+<!--            <id>github</id>-->
+<!--            <name>atongPackages</name>-->
+<!--            <url>https://maven.pkg.github.com/atongmuzi/atong</url>-->
+<!--        </repository>-->
     </distributionManagement>
 
 </project>
