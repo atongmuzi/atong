@@ -1,5 +1,6 @@
 package httpInterface.forum;
 
+import com.alibaba.fastjson.JSONArray;
 import httpInterface.BaseCase;
 import io.cex.test.framework.httputil.OkHttpClientManager;
 import io.cex.test.framework.jsonutil.JsonFileUtil;
@@ -14,7 +15,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import  static  data.baseUrlData.forumInvitationUrl;
-import static  data.baseTokenData.Token_13656640242;
 
 /**
  * @author tongcy
@@ -24,11 +24,13 @@ import static  data.baseTokenData.Token_13656640242;
 public class Invitation extends BaseCase {
     String postUrl;
     HashMap header;
+    String token;
 
     @BeforeClass
     public void InvitationPre(){
         postUrl = url+forumInvitationUrl;
-        header = headInit(Token_13656640242);
+        token = getToken();
+        header = headInit(token);
     }
 
 
@@ -47,7 +49,6 @@ public class Invitation extends BaseCase {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody,
                 "application/json", header);
-
     }
 
 }
