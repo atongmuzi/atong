@@ -44,6 +44,9 @@ public class Invitation extends BaseCase {
         HashMap<String, String>[][] arrymap = (HashMap<String, String>[][]) JsonFileUtil.jsonFileToArry(path);
         return arrymap;
     }
+    /**
+     * @desc 正常发帖
+     **/
     @Test(dataProvider = "InvitationTestRightData", description = "正常测试案例")
     public void invitationInsert(Map<?,?> param) throws IOException {
         String jsonbody = jsonToString(param);
