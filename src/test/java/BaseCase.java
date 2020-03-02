@@ -1,3 +1,4 @@
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 
 /**
  * @author tongcy
@@ -7,9 +8,6 @@
 
 
 
-
-
-
-public class BaseCase {
+public class BaseCase extends AbstractTestNGSpringContextTests {
     public static String url = "http://jinchacha-dev.lifengkong.cn";
 }
