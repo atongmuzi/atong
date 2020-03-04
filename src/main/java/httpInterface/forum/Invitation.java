@@ -50,8 +50,6 @@ public class Invitation extends BaseCase {
     @Test(dataProvider = "InvitationTestRightData", description = "正常测试案例")
     public void invitationInsert(Map<?,?> param) throws IOException {
         String jsonbody = jsonToString(param);
-        Response response = OkHttpClientManager.post(postUrl, jsonbody,
-                "application/json", header);
+        Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
     }
-
 }
