@@ -3,11 +3,9 @@ package httpInterface;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import httpInterface.forum.dto.resultDTO;
 import io.cex.test.framework.dbutil.DataBaseManager;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.Response;
-import org.apache.poi.ss.formula.functions.T;
 
 import java.sql.Connection;
 import java.util.HashMap;

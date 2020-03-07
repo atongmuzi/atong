@@ -1,9 +1,6 @@
 package httpInterface.forum;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import httpInterface.BaseCase;
-import io.cex.test.framework.assertutil.AssertTool;
 import io.cex.test.framework.httputil.OkHttpClientManager;
 import io.cex.test.framework.jsonutil.JsonFileUtil;
 import okhttp3.Response;
@@ -28,7 +25,6 @@ public class Invitation extends BaseCase {
     String postUrl;
     HashMap header;
     String token;
-    resultDTO resultDTO;
 
     @BeforeClass
     public void InvitationPre(){
@@ -55,6 +51,6 @@ public class Invitation extends BaseCase {
     public void invitationInsert(Map<?,?> param) throws IOException {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
-        resultDTO resultDTO1 = getResult(response,resultDTO.class);
+        ResultDTO resultDTO = getResult(response, ResultDTO.class);
     }
 }
