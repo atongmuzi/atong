@@ -5,6 +5,7 @@ import io.cex.test.framework.assertutil.AssertTool;
 import io.cex.test.framework.httputil.OkHttpClientManager;
 import io.cex.test.framework.jsonutil.JsonFileUtil;
 import okhttp3.Response;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -53,7 +54,6 @@ public class Invitation extends BaseCase {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
         ResultDTO resultDTO = getResult(response, ResultDTO.class);
-
-
+        AssertTool.isBooleanEqual(true,resultDTO.success);
     }
 }
