@@ -1,6 +1,7 @@
 package httpInterface.forum;
 
 import httpInterface.BaseCase;
+import io.cex.test.framework.assertutil.AssertTool;
 import io.cex.test.framework.httputil.OkHttpClientManager;
 import io.cex.test.framework.jsonutil.JsonFileUtil;
 import okhttp3.Response;
@@ -52,5 +53,7 @@ public class Invitation extends BaseCase {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
         ResultDTO resultDTO = getResult(response, ResultDTO.class);
+
+
     }
 }
