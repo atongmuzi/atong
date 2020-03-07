@@ -28,6 +28,7 @@ public class Invitation extends BaseCase {
     String postUrl;
     HashMap header;
     String token;
+    resultDTO resultDTO;
 
     @BeforeClass
     public void InvitationPre(){
@@ -54,9 +55,6 @@ public class Invitation extends BaseCase {
     public void invitationInsert(Map<?,?> param) throws IOException {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
-        System.out.println(response);
-        resultDTO resultDTO =   JSON.parseObject(response.body().string(), resultDTO.class);
-       // AssertTool.isContainsExpect("200",response.);
-        System.out.println(resultDTO.toString());
+        resultDTO resultDTO1 = getResult(response,resultDTO.class);
     }
 }
