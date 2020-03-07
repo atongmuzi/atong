@@ -1,5 +1,6 @@
 package httpInterface.forum;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import httpInterface.BaseCase;
 import io.cex.test.framework.assertutil.AssertTool;
@@ -14,6 +15,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
+import httpInterface.forum.dto.*;
 
 import  static  data.baseUrlData.forumInvitationUrl;
 
@@ -53,6 +55,8 @@ public class Invitation extends BaseCase {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
         System.out.println(response);
+        resultDTO resultDTO =   JSON.parseObject(response.body().string(), resultDTO.class);
        // AssertTool.isContainsExpect("200",response.);
+        System.out.println(resultDTO.toString());
     }
 }

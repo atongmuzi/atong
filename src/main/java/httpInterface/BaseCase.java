@@ -3,7 +3,11 @@ package httpInterface;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import httpInterface.forum.dto.resultDTO;
 import io.cex.test.framework.dbutil.DataBaseManager;
+import lombok.extern.slf4j.Slf4j;
+import okhttp3.Response;
+import org.apache.poi.ss.formula.functions.T;
 
 import java.sql.Connection;
 import java.util.HashMap;
@@ -16,7 +20,7 @@ import java.util.Map;
  **/
 
 
-
+@Slf4j
 public class BaseCase {
     public static String url = "http://jinchacha-dev.lifengkong.cn";
     String  sql = "select * from user_token where id = '1649355467141421983' ";
@@ -39,5 +43,17 @@ public class BaseCase {
         JSONArray sqlResult = dataBaseManager.executeQuery(sql,connection);
         String token = sqlResult.getJSONObject(0).getString("token");
         return token;
+    }
+    public <T> T getResult(Response response,Class<T> clazz){
+        String resultString = null;
+        try{
+            resultString = response.body().string();
+        }
+        catch (Exception e){
+            log.error("The http response'body is null,please check the httpRequest");
+        }
+        return JSON.parseObject(resultString,clazz);
+
+
     }
 }
