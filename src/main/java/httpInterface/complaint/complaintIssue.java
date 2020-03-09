@@ -46,7 +46,7 @@ public class complaintIssue extends BaseCase {
         return arrymap;
     }
     /**
-     * @desc 正常发帖
+     * @desc 正常投诉（包括两条案例，不带图片投诉和带图片投诉）
      **/
     @Test(dataProvider = "InvitationTestRightData", description = "正常测试案例")
     public void complaintIssue(Map<?,?> param) throws IOException {
