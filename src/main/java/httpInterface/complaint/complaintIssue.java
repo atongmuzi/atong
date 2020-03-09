@@ -17,6 +17,12 @@ import java.util.Map;
 
 import static data.baseUrlData.complaintIssureUrl;
 
+/**
+ * @author tongcy
+ * @date 2020-03-09 16:02
+ * @desc 投诉正常和异常案例
+ **/
+
 public class complaintIssue extends BaseCase {
     String postUrl;
     HashMap header;
