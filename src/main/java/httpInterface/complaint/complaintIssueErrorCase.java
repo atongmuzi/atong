@@ -23,7 +23,7 @@ import static data.baseUrlData.complaintIssureUrl;
  * @desc 投诉正常和异常案例
  **/
 
-public class complaintIssue extends BaseCase {
+public class complaintIssueErrorCase extends BaseCase {
     String postUrl;
     HashMap header;
     String token;
@@ -41,18 +41,18 @@ public class complaintIssue extends BaseCase {
      **/
     @DataProvider(parallel=true)
     public Object[][] InvitationTestRightData(Method method){
-        String path = "./src/main/resources/complaint/right";
+        String path = "./src/main/resources/complaint/error";
         HashMap<String, String>[][] arrymap = (HashMap<String, String>[][]) JsonFileUtil.jsonFileToArry(path);
         return arrymap;
     }
     /**
      * @desc 正常投诉（包括两条案例，不带图片投诉和带图片投诉）
      **/
-    @Test(dataProvider = "InvitationTestRightData", description = "正常测试案例")
+    @Test(dataProvider = "InvitationTestRightData", description = "异常测试案例")
     public void complaintIssue(Map<?,?> param) throws IOException {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
         ResultAllDTO resultAllDTO = getResult(response, ResultAllDTO.class);
-        AssertTool.isContainsExpect("成功",resultAllDTO.getMsg());
+      //  AssertTool.isContainsExpect("成功",resultAllDTO.getMsg());
     }
 }
