@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import io.cex.test.framework.dbutil.DataBaseManager;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.Response;
+import org.apache.poi.ss.formula.functions.T;
 
 import java.sql.Connection;
 import java.util.HashMap;
@@ -62,5 +63,7 @@ public class BaseCase {
             log.error("The http response'body is null,please check the httpRequest");
         }
         return JSON.parseObject(resultString,clazz);
+//         T result = JSON.parseObject(resultString,clazz);
+//        return  (T) result;
     }
 }
