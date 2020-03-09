@@ -1,0 +1,10 @@
+{
+  "comment": "某用户投诉--带两张图片",
+  "body": {
+    "platformId": 918,
+    "title": "哈哈哈",
+    "content": "给的后天",
+    "images": ["https://jinchacha-dev.oss-cn-shanghai.aliyuncs.com/file/8ec235ee-c12d-4086-a82c-4e484946faf5.png", "https://jinchacha-dev.oss-cn-shanghai.aliyuncs.com/file/0a684cbb-51ba-49fa-9453-a9c7ae3b401f.png"]
+  },
+  "assert":"000000"
+}

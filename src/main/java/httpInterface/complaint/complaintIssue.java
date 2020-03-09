@@ -1,11 +1,11 @@
-package httpInterface.forum;
+package httpInterface.complaint;
 
 import httpInterface.BaseCase;
+import httpInterface.dto.ResultAllDTO;
 import io.cex.test.framework.assertutil.AssertTool;
 import io.cex.test.framework.httputil.OkHttpClientManager;
 import io.cex.test.framework.jsonutil.JsonFileUtil;
 import okhttp3.Response;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -14,27 +14,20 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-import httpInterface.forum.dto.*;
 
-import  static  data.baseUrlData.forumInvitationUrl;
+import static data.baseUrlData.complaintIssureUrl;
 
-/**
- * @author tongcy
- * @date 2020-03-02 14:11
- * @desc 帖子测试案例
- **/
-public class Invitation extends BaseCase {
+public class complaintIssue extends BaseCase {
     String postUrl;
     HashMap header;
     String token;
 
     @BeforeClass
     public void InvitationPre(){
-        postUrl = url+forumInvitationUrl;
+        postUrl = url+complaintIssureUrl;
         token = getToken();
-        header = headInitFoum(token);
+        header = headInit(token);
     }
-
 
     /**
      * @desc 正常用例的数据驱动
@@ -42,7 +35,7 @@ public class Invitation extends BaseCase {
      **/
     @DataProvider(parallel=true)
     public Object[][] InvitationTestRightData(Method method){
-        String path = "./src/main/resources/forum/right";
+        String path = "./src/main/resources/complaint/right";
         HashMap<String, String>[][] arrymap = (HashMap<String, String>[][]) JsonFileUtil.jsonFileToArry(path);
         return arrymap;
     }
@@ -50,10 +43,10 @@ public class Invitation extends BaseCase {
      * @desc 正常发帖
      **/
     @Test(dataProvider = "InvitationTestRightData", description = "正常测试案例")
-    public void invitationInsert(Map<?,?> param) throws IOException {
+    public void complaintIssue(Map<?,?> param) throws IOException {
         String jsonbody = jsonToString(param);
         Response response = OkHttpClientManager.post(postUrl, jsonbody, "application/json", header);
-        ResultDTO resultDTO = getResult(response, ResultDTO.class);
-        AssertTool.isBooleanEqual(true,resultDTO.success);
+        ResultAllDTO resultAllDTO = getResult(response, ResultAllDTO.class);
+        AssertTool.isContainsExpect("成功",resultAllDTO.getMsg());
     }
 }

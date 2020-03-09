@@ -1,0 +1,10 @@
+{
+  "comment": "某用户投诉--不带图片",
+  "body": {
+    "platformId": 918,
+    "title": "哈哈哈",
+    "content": "给的后天",
+    "images": []
+  },
+  "assert":"000000"
+}

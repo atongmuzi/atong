@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter@Setter
-public class RESULTDTO {
+public class ResultAllDTO {
     private String code ;
     private String msg;
-    private Integer time;
+    private String time;
 }

@@ -26,14 +26,26 @@ public class BaseCase {
     DataBaseManager dataBaseManager = new DataBaseManager();
 
     /**
-     * @desc http请求头初始化
+     * @desc http请求头初始化 --通用类
      **/
     public HashMap<String,String> headInit(String token){
+        HashMap<String,String> map = new HashMap<>();
+        map.put("token",token);
+        map.put("accept","application/json");
+        return map ;
+    }
+
+    /**
+     * @desc http请求头初始化 --论坛
+     **/
+    public HashMap<String,String> headInitFoum(String token){
             HashMap<String,String> map = new HashMap<>();
             map.put("token",token);
             map.put("accept","application/json;responseformat=3");
             return map ;
         }
+
+
     /**
      * @desc 根据json文件中的json数据转为可用的String数据返回
      **/

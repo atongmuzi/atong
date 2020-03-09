@@ -7,4 +7,5 @@ package data;
  **/
 public class baseUrlData {
     public static String forumInvitationUrl = "/front/fengdun_forum/forum_post/insert";
+    public static String complaintIssureUrl = "/api/v1.0/complaint/issue";
 }
