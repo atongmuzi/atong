@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import okhttp3.Response;
 import org.apache.poi.ss.formula.functions.T;
 
+import java.io.BufferedWriter;
 import java.sql.Connection;
 import java.util.HashMap;
 import java.util.Map;
@@ -78,4 +79,5 @@ public class BaseCase {
 //         T result = JSON.parseObject(resultString,clazz);
 //        return  (T) result;
     }
+
 }

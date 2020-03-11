@@ -2,7 +2,6 @@ package httpInterface.complaint;
 
 import httpInterface.BaseCase;
 import httpInterface.dto.ResultAllDTO;
-import io.cex.test.framework.assertutil.AssertTool;
 import io.cex.test.framework.httputil.OkHttpClientManager;
 import io.cex.test.framework.jsonutil.JsonFileUtil;
 import okhttp3.Response;
