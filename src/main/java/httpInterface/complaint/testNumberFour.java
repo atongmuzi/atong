@@ -9,7 +9,7 @@ import java.util.List;
 public class testNumberFour {
     public static void main(String[] args) {
         double[] dbe = new double[]{90.14,83.16,89.22,92,88.46,77.1,85.44,92.88,86.26,77.86,46.04,83.7,76.68,76.28,78.76,83.94,71.94,86.16,72.38};
-        List<Item[]> items = fourSum(dbe, 488.66);
+        List<Item[]> items = fourSum(dbe, 578.8);
         items.forEach(item -> {
             System.out.println(Arrays.toString(item));
         });
