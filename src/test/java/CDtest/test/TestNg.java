@@ -17,6 +17,8 @@ import org.testng.annotations.Test;
 import CDtest.data.staticDTOData;
 import ru.yandex.qatools.allure.annotations.Title;
 
+import java.util.Arrays;
+
 import static io.qameta.allure.Allure.step;
 
 import static CDtest.data.staticDTOData.testJson;
@@ -67,6 +69,7 @@ public class TestNg extends AbstractJava {
     }
     @Test
     public void nameTest(){
+
 
     }
 }
