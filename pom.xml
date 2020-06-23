@@ -169,6 +169,13 @@
                 </includes>
             </resource>
             <resource>
+                <directory>data</directory>
+                <includes>
+                    <include>*</include>
+                </includes>
+                <targetPath>${project.build.directory}/classes/data</targetPath>
+            </resource>
+            <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <excludes>

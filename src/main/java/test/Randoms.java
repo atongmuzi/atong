@@ -1,6 +1,7 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.*;
@@ -13,7 +14,9 @@ public class Randoms {
 
     public static void main(String[] args) {
         System.out.println(Random.class);
-        new Random(47).ints(5,20).distinct().limit(7).sorted().forEach(System.out::println);
+        new Random(47).ints(5,20).distinct().limit(7).sorted().forEach(System.out::print);
+
+        new Random(47).ints(5,20).boxed().forEach(System.out::println);
 
 
         System.out.println();
