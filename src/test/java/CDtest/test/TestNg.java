@@ -69,7 +69,7 @@ public class TestNg extends AbstractJava {
     }
     @Test
     public void nameTest(){
-
+        System.out.println("hahah");
 
     }
 }
